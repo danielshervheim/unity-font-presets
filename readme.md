@@ -1,6 +1,6 @@
 # Unity Font Presets
 
-This is a tool that allows you to define font presets and apply them to text components. When the preset is changed, any `TextMeshProUGUI` component that uses that preset will reflect the changes immediately. This is useful for keeping consistent text styles throughout a project.
+This is a tool for Unity that allows you to define font presets and apply them to text components. When the preset is changed, any `TextMeshProUGUI` component that uses that preset will reflect the changes immediately. This is useful for keeping consistent text styles throughout a project.
 
 ## To Use
 
