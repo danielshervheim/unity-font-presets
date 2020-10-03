@@ -19,3 +19,4 @@ MonoBehaviour:
   wordSpacing: 0
   lineSpacing: 0
   paragraphSpacing: 0
+  color: {r: 0, g: 0, b: 0, a: 1}

@@ -15,12 +15,15 @@ public class ApplyFontPreset : MonoBehaviour
     /// @brief The FontPreset to apply.
     public FontPreset fontPreset;
 
+    /// @brief Wether to allow a color override or not.
+    public bool allowColorOverride = false;
+
     /// @brief Whether or not to destroy this component once the game starts.
     /// You should enable this if you don't plan on modifying the FontPreset at runtime.
     public bool destroyInGame = true;
 
     /// @brief Applies the given FontPreset to the given TextMeshProUGUI component.
-    public static void Apply(FontPreset fontPreset, TextMeshProUGUI textMesh)
+    public static void Apply(FontPreset fontPreset, TextMeshProUGUI textMesh, bool allowColorOverride = false)
     {
         if (textMesh.font != fontPreset.font)
         {
@@ -56,6 +59,11 @@ public class ApplyFontPreset : MonoBehaviour
         {
             textMesh.paragraphSpacing = fontPreset.paragraphSpacing;
         }
+
+        if (textMesh.color != fontPreset.color && !allowColorOverride)
+        {
+            textMesh.color = fontPreset.color;
+        }
     }
 
     // Applies the font preset every frame.
@@ -74,7 +82,7 @@ public class ApplyFontPreset : MonoBehaviour
             return;
         }
 
-        Apply(fontPreset, m_text);
+        Apply(fontPreset, m_text, allowColorOverride);
 
         // Destroy this component after setting, if enabled.
         if (Application.isPlaying && destroyInGame)

@@ -163,6 +163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fontPreset: {fileID: 11400000, guid: 9853256bc8cf84a33a460e940b03e059, type: 2}
+  allowColorOverride: 0
   destroyInGame: 1
 --- !u!114 &143387144
 MonoBehaviour:
@@ -411,6 +412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fontPreset: {fileID: 11400000, guid: 5c6bac8eae4004649933f77f4d4c655e, type: 2}
+  allowColorOverride: 0
   destroyInGame: 1
 --- !u!114 &469592321
 MonoBehaviour:
@@ -743,6 +745,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fontPreset: {fileID: 11400000, guid: bf4bfa8839d104047815c48202bfd221, type: 2}
+  allowColorOverride: 0
   destroyInGame: 1
 --- !u!114 &1137771297
 MonoBehaviour:
@@ -913,6 +916,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fontPreset: {fileID: 11400000, guid: 9853256bc8cf84a33a460e940b03e059, type: 2}
+  allowColorOverride: 0
   destroyInGame: 1
 --- !u!114 &1383709945
 MonoBehaviour:

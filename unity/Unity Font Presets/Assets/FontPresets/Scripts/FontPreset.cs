@@ -25,4 +25,7 @@ public class FontPreset : ScriptableObject
 
     /// @brief The space between paragraphs.
     public float paragraphSpacing = 0f;
+
+    /// @brief The color to use.
+    public Color color = Color.black;
 }
