@@ -1,4 +1,4 @@
-using TMPro;
+using TextMesh = TMPro.TextMeshProUGUI;
 using UnityEngine;
 
 /// @brief Applies a FontPreset to the attached TextMeshPro component.
@@ -6,11 +6,11 @@ using UnityEngine;
 /// This is useful to keep text consistent throughout the project as a change
 /// to the FontPreset will be reflected everywhere it is used.
 [ExecuteInEditMode]
-[RequireComponent(typeof(TextMeshProUGUI))]
+[RequireComponent(typeof(TextMesh))]
 public class ApplyFontPreset : MonoBehaviour
 {
     // The TextMeshPro component to apply this FontPreset to.
-    private TextMeshProUGUI m_text;
+    private TextMesh _text;
 
     /// @brief The FontPreset to apply.
     public FontPreset fontPreset;
@@ -23,7 +23,7 @@ public class ApplyFontPreset : MonoBehaviour
     public bool destroyInGame = true;
 
     /// @brief Applies the given FontPreset to the given TextMeshProUGUI component.
-    public static void Apply(FontPreset fontPreset, TextMeshProUGUI textMesh, bool allowColorOverride = false)
+    public static void Apply(FontPreset fontPreset, TextMesh textMesh, bool allowColorOverride = false)
     {
         if (textMesh.font != fontPreset.font)
         {
@@ -69,20 +69,18 @@ public class ApplyFontPreset : MonoBehaviour
     // Applies the font preset every frame.
     private void Update()
     {
-        // Verify that the TextMeshPro component is set.
-        if (m_text == null)
+        if (!fontPreset)
         {
-            m_text = GetComponent<TextMeshProUGUI>();
-        }
-
-        // If no preset is provided, then log an error and quit.
-        if (fontPreset == null)
-        {
-            Debug.LogError("No FontPreset provided!");
             return;
         }
 
-        Apply(fontPreset, m_text, allowColorOverride);
+        // Verify that the TextMeshPro component is set.
+        if (!_text)
+        {
+            _text = GetComponent<TextMesh>();
+        }
+
+        Apply(fontPreset, _text, allowColorOverride);
 
         // Destroy this component after setting, if enabled.
         if (Application.isPlaying && destroyInGame)
