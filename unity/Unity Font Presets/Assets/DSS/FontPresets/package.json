@@ -1,0 +1,27 @@
+{
+    "name": "com.dss.fontpresets",
+    "displayName": "Font Presets",
+    "version": "1.0.1",
+    "unity": "2018.3",
+    "description": "A font preset system to keep text styles consistant throughout a project.",
+    "dependencies": {
+        "com.unity.textmeshpro": "1.4.1"
+    },
+    "keywords": [
+        "font",
+        "fonts",
+        "presets"
+    ],
+    "author": {
+        "name" : "Dan Shervheim",
+        "email" : "danielshervheim@gmail.com",
+        "url" : "http://danielshervheim.com/"
+    },
+    "samples": [
+        {
+            "displayName": "Example Scene",
+            "description": "A small example scene with a few presets.",
+            "path": "Samples/ExampleScene"
+        }
+    ]
+}
