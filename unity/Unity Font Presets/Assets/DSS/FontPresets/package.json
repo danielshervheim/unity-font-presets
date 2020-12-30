@@ -21,7 +21,7 @@
         {
             "displayName": "Example Scene",
             "description": "A small example scene with a few presets.",
-            "path": "Samples/ExampleScene"
+            "path": "Samples~/ExampleScene"
         }
     ]
 }
