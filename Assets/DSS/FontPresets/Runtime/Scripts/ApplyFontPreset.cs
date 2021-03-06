@@ -17,15 +17,12 @@ namespace DSS.FontPresets
         /// @brief The FontPreset to apply.
         public FontPreset fontPreset;
 
-        /// @brief Wether to allow a color override or not.
-        public bool allowColorOverride = false;
-
         /// @brief Whether or not to destroy this component once the game starts.
         /// You should enable this if you don't plan on modifying the FontPreset at runtime.
         public bool destroyInGame = true;
 
         /// @brief Applies the given FontPreset to the given TextMeshProUGUI component.
-        public static void Apply(FontPreset fontPreset, TextMesh textMesh, bool allowColorOverride = false)
+        public static void Apply(FontPreset fontPreset, TextMesh textMesh)
         {
             if (textMesh.font != fontPreset.font)
             {
@@ -61,11 +58,6 @@ namespace DSS.FontPresets
             {
                 textMesh.paragraphSpacing = fontPreset.paragraphSpacing;
             }
-
-            if (textMesh.color != fontPreset.color && !allowColorOverride)
-            {
-                textMesh.color = fontPreset.color;
-            }
         }
 
         // Applies the font preset every frame.
@@ -82,7 +74,7 @@ namespace DSS.FontPresets
                 _text = GetComponent<TextMesh>();
             }
 
-            Apply(fontPreset, _text, allowColorOverride);
+            Apply(fontPreset, _text);
 
             // Destroy this component after setting, if enabled.
             if (Application.isPlaying && destroyInGame)

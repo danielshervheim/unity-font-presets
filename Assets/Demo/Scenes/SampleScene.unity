@@ -163,7 +163,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fontPreset: {fileID: 11400000, guid: 9853256bc8cf84a33a460e940b03e059, type: 2}
-  allowColorOverride: 0
   destroyInGame: 1
 --- !u!114 &143387144
 MonoBehaviour:
@@ -412,7 +411,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fontPreset: {fileID: 11400000, guid: 5c6bac8eae4004649933f77f4d4c655e, type: 2}
-  allowColorOverride: 0
   destroyInGame: 1
 --- !u!114 &469592321
 MonoBehaviour:
@@ -745,7 +743,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fontPreset: {fileID: 11400000, guid: bf4bfa8839d104047815c48202bfd221, type: 2}
-  allowColorOverride: 0
   destroyInGame: 1
 --- !u!114 &1137771297
 MonoBehaviour:
@@ -916,7 +913,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fontPreset: {fileID: 11400000, guid: 9853256bc8cf84a33a460e940b03e059, type: 2}
-  allowColorOverride: 0
   destroyInGame: 1
 --- !u!114 &1383709945
 MonoBehaviour:
@@ -936,9 +932,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Try it for yourself! Select any of the FontPresets in "Assets/FontPreset
-    Examples" and change a variable. The change will be reflected anywhere that FontPreset
-    is used.
+  m_text: Try it for yourself! Select any of the FontPresets in "Assets/Demo/Presets"
+    and change a variable. The change will be reflected anywhere that FontPreset is
+    used.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1007,9 +1003,9 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1383709945}
-    characterCount: 168
+    characterCount: 161
     spriteCount: 0
-    spaceCount: 25
+    spaceCount: 24
     wordCount: 27
     linkCount: 0
     lineCount: 2

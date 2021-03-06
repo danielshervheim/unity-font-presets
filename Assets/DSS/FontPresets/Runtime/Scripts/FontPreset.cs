@@ -4,7 +4,7 @@ using UnityEngine;
 namespace DSS.FontPresets
 {
     /// @brief A collection of TextMeshPro options in a single object.
-    [CreateAssetMenu(fileName = "New Font Preset", menuName = "ScriptableObjects/Font Preset", order = 1)]
+    [CreateAssetMenu(fileName = "New Font Preset", menuName = "DSS/Font Presets/Font Preset", order = 1)]
     public class FontPreset : ScriptableObject
     {
         /// @brief The font asset.
@@ -27,8 +27,5 @@ namespace DSS.FontPresets
 
         /// @brief The space between paragraphs.
         public float paragraphSpacing = 0f;
-
-        /// @brief The color to use.
-        public Color color = Color.black;
     }
 }  // DSS.FontPresets

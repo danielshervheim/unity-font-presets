@@ -1,5 +1,5 @@
 {
-    "name": "DSS.FontPresets",
+    "name": "DSS.FontPresets.Runtime",
     "references": [
         "Unity.TextMeshPro"
     ],
