@@ -1,0 +1,25 @@
+{
+    "author": {
+      "name" : "Daniel Shervheim",
+      "email" : "danielshervheim@gmail.com",
+      "url" : "https://www.danielshervheim.com/"
+    },
+    "description": "A way to keep font styles consistant throughout a project.",
+    "dependencies": {
+        "com.unity.textmeshpro": "1.4.1"
+    },
+    "displayName": "Font Presets",
+    "keywords": [
+      "unity",
+      "font",
+      "theme",
+      "text",
+      "style"
+    ],
+    "license": "BSD-3-Clause",
+    "name": "com.dss.font-presets",
+    "repository": "github:danielshervheim/unity-font-presets",
+    "unity": "2018.3",
+    "version": "1.4.1",
+    "hideInEditor": false
+}
